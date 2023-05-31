@@ -15,37 +15,3 @@ export async function POST(request: Request) {
 
   return NextResponse.json(data);
 }
-
-//   const { data, error } = await supabase.auth.signInWithPassword({
-//     email: "tim.coleman@hyperreal.io",
-//     password: "123456",
-//   });
-
-//   return NextResponse.json({ data });
-// }
-
-// export async function POST() {
-//   if (req.method !== "POST") {
-//     return res.status(405).json({ error: "Method Not Allowed" });
-//   }
-
-//   const { email, password } = req.body;
-
-//   console.log("email: ", email);
-//   console.log("password: ", password);
-
-//     try {
-//       const { data, error } = await supabase.auth.signIn({
-//         email,
-//         password,
-//       });
-
-//       if (error) {
-//         throw new Error(error.message);
-//       }
-
-//       res.status(200).json({ data });
-//     } catch (error) {
-//       res.status(400).json({ error: error.message });
-//     }
-// }
